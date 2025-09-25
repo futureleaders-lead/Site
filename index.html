@@ -11,6 +11,51 @@
     <style>
       body {
         font-family: 'Poppins', sans-serif;
+        background-color: #f0f4f8; /* A light, clean background */
+        overflow-x: hidden;
+      }
+      .background-shapes {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+      }
+      .shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(150px);
+        opacity: 0.6;
+      }
+      .shape-1 {
+        width: 400px;
+        height: 400px;
+        background: rgba(245, 130, 32, 0.4);
+        top: -100px;
+        left: -100px;
+        animation: float 25s infinite alternate;
+      }
+      .shape-2 {
+        width: 500px;
+        height: 500px;
+        background: rgba(30, 144, 255, 0.3);
+        bottom: -150px;
+        right: -150px;
+        animation: float 30s infinite alternate;
+      }
+      .shape-3 {
+        width: 300px;
+        height: 300px;
+        background: rgba(30, 200, 255, 0.3);
+        bottom: 20%;
+        left: 20%;
+        animation: float 20s infinite alternate;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+        100% { transform: translateY(-100px) translateX(50px) rotate(180deg); }
       }
       @keyframes pulse-bright {
         0%, 100% {
@@ -21,6 +66,9 @@
           box-shadow: 0 0 25px rgba(245, 130, 32, 0.8), 0 0 40px rgba(245, 130, 32, 0.6);
           transform: scale(1.05);
         }
+      }
+      html {
+        scroll-behavior: smooth;
       }
     </style>
 
@@ -35,9 +83,14 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/Site/assets/index-CgE4E-V0.js"></script>
+  <script type="module" crossorigin src="/Site/assets/index-BbGGTMFI.js"></script>
 </head>
-  <body class="bg-white text-gray-800">
+  <body class="text-gray-800">
+    <div class="background-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
     <div id="root"></div>
 </body>
 </html>
