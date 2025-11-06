@@ -45,7 +45,7 @@ const About: React.FC = () => {
           Future Leaders is India's largest platform to discover, nurture, and celebrate students with the vision to be leaders and changemakers. From classroom challenges to district-level showdowns and an electrifying grand finale, this is where passion transforms into opportunity.
         </p>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 
