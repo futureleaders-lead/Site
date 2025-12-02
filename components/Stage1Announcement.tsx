@@ -133,7 +133,7 @@ const Stage1Announcement: React.FC = () => {
             </ul>
             <div className="mt-8 text-center">
                  <p className="text-lg font-bold text-gray-900 bg-amber-300 inline-block px-4 py-2 rounded-lg shadow">
-                    📌 Deadline for submission: November 30, 2025
+                    📌 Deadline for submission: December 30, 2025
                 </p>
                 <p className="mt-4 text-xl font-semibold text-gray-900">
                     👉 Don’t miss this opportunity to be part of the Future Leaders Movement and secure your place in the next stage!
